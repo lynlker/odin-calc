@@ -10,35 +10,35 @@
     <h1>Basic Ass Calculator</h1>
     <div class="calculator-area">
         <div class="screen-area">
-            <span class="screen">0</span>
+            <p id="screen">0</p>
         </div>
         <div class="button-area">
             <div class="row">
-                <button class="btn" id="buttonNine">9</button>
-                <button class="btn" id="buttonEight">8</button>
-                <button class="btn" id="buttonSeven">7</button>
-                <button class="btn" id="minus">-</button>
+                <button onclick="whenClicked('7');" class="btn" id="buttonSeven">7</button>
+                <button onclick="whenClicked('8');" class="btn" id="buttonEight">8</button>
+                <button onclick="whenClicked('9');" class="btn" id="buttonNine">9</button>
+                <button onclick="whenClicked('-');" class="btn" id="minus">-</button>
             </div>
             <div class="row">
-                <button class="btn" id="buttonSix">6</button>
-                <button class="btn" id="buttonFive">5</button>
-                <button class="btn" id="buttonFour">4</button>
-                <button class="btn" id="plus">+</button>
+                <button onclick="whenClicked('4');" class="btn" id="buttonFour">4</button>
+                <button onclick="whenClicked('5');" class="btn" id="buttonFive">5</button>
+                <button onclick="whenClicked('6');" class="btn" id="buttonSix">6</button>
+                <button onclick="whenClicked('+');" class="btn" id="buttonPlus">+</button>
             </div>
             <div class="row">
-                <button class="btn" id="buttonThree">3</button>
-                <button class="btn" id="buttonTwo">2</button>
-                <button class="btn" id="buttonOne">1</button>
-                <button class="btn" id="star">*</button>
+                <button onclick="whenClicked('1');" class="btn" id="buttonOne">1</button>
+                <button onclick="whenClicked('2');" class="btn" id="buttonTwo">2</button>
+                <button onclick="whenClicked('3');" class="btn" id="buttonThree">3</button>
+                <button onclick="whenClicked('*');" class="btn" id="star">*</button>
             </div>
             <div class="row"></div>
-            <button id="buttonZero">0</button>
-            <button id="buttonDouZero">00</button>
-            <button id="equals">=</button>
-            <button id="division">/</button>
+            <button onclick="whenClicked('0');" id="buttonZero">0</button>
+            <button onclick="whenClicked('00');" id="buttonDouZero">00</button>
+            <button onclick="whenClicked('=');" id="equals">=</button>
+            <button onclick="whenClicked('/');" id="division">/</button>
         </div>
-        <button id="clear">Clear</button>
+        <button onclick="whenClicked('clear');" id="clear">Clear</button>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </body>
 </html>

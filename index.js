@@ -3,6 +3,8 @@ let firstValue = 0;
 let secondValue = 0;
 let isOpActive = false;
 let opType = "none"
+let display = document.getElementById("screen");
+
 
 // FUNCTIONS
 
@@ -46,9 +48,18 @@ function whenClicked(btn){
             isOpActive = false;
             opType = "none";
             //here i'd reset the DOM screen to 0
+            display.innerText = "0";
+            break;
+        case "=":
+            //make another function here to calculate the whole mumbo jumbo
             break;
         default:
             //here i'd add whatever number to the DOM screen
+            if (display.innerText === "0"){
+                display.innerText = `${btn}`;
+            } else{
+                display.innerText = display.innerText.concat(`${btn}`);
+            }
             break;
     }
 }
