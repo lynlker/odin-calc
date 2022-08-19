@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
     <title>Odin Calculator by lynlker</title>
 </head>
 <body>
@@ -32,12 +33,12 @@
                 <button onclick="whenClicked('*');" class="btn" id="star">*</button>
             </div>
             <div class="row"></div>
-            <button onclick="whenClicked('0');" id="buttonZero">0</button>
-            <button onclick="whenClicked('00');" id="buttonDouZero">00</button>
-            <button onclick="whenClicked('=');" id="equals">=</button>
-            <button onclick="whenClicked('/');" id="division">/</button>
+            <button onclick="whenClicked('0');" class="btn" id="buttonZero">0</button>
+            <button onclick="whenClicked('.');" class="btn" id="buttonDot">.</button>
+            <button onclick="whenClicked('=');" class="btn" id="equals">=</button>
+            <button onclick="whenClicked('/');" class="btn" id="division">/</button>
         </div>
-        <button onclick="whenClicked('clear');" id="clear">Clear</button>
+        <button onclick="whenClicked('clear');" class="btn" id="clear">Clear</button>
     </div>
     <script src="index.js" defer></script>
 </body>
